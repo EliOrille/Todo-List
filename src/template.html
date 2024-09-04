@@ -6,6 +6,27 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <label for="projectName">Project Name:</label>
+    <input type="text" id="projectName">
+    <label for="projectDescription">Project Description:</label>
+    <input type= "text" id="projectDescription">
+    <label for="dueDate">Due Date:</label>
+    <input type= "datetime" id="dueDate">
+    <div>
+        <label for="priority">Priority:</label>
+        <div>
+        <input type="radio" id="high" name="priority" value="high">
+        <label for="high">High</label>
+        </div>
+        <div>
+        <input type="radio" id="medium" name="priority" value="medium" checked>
+        <label for="medium">Medium</label>
+        </div>
+        <div>
+        <input type="radio" id="low" name="priority" value="low">
+        <label for="low">Low</label>
+        </div>
+    </div>
+    <button type="submit" id="submitForm">Submit</button>
 </body>
 </html>

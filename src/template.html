@@ -3,30 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Todo-List</title>
 </head>
 <body>
-    <label for="projectName">Project Name:</label>
-    <input type="text" id="projectName">
-    <label for="projectDescription">Project Description:</label>
-    <input type= "text" id="projectDescription">
-    <label for="dueDate">Due Date:</label>
-    <input type= "datetime" id="dueDate">
-    <div>
-        <label for="priority">Priority:</label>
-        <div>
-        <input type="radio" id="high" name="priority" value="high">
-        <label for="high">High</label>
-        </div>
-        <div>
-        <input type="radio" id="medium" name="priority" value="medium" checked>
-        <label for="medium">Medium</label>
-        </div>
-        <div>
-        <input type="radio" id="low" name="priority" value="low">
-        <label for="low">Low</label>
-        </div>
+    <button id="createProjectButton">Create Project</button>
+    <div id="projectSubmitBlock">
+        <label for="projectName">Project Name:</label>
+        <input type="text" id="projectName">
+        <label for="projectDescription">Project Description:</label>
+        <input type= "text" id="projectDescription">
+        <label for="dueDate">Due Date:</label>
+        <input type= "datetime" id="dueDate">
+        <label for="priority">Priority (1-10)</label>
+        <input type="number" id="priority">
+        <button id="submitForm">Submit</button>
     </div>
-    <button type="submit" id="submitForm">Submit</button>
+
+    <div id="todoSubmitBlock">
+        <label for="todoName">Todo Name:</label>
+        <input type="text" id="todoName">
+        <label for="todoDescription">Todo Description:</label>
+        <input type= "text" id="todoDescription">
+        <label for="todoPriority">Priority (1-10)</label>
+        <input type="number" id="todoPriority">
+        <button id="todoSubmitForm">Submit</button>
+    </div>
+
+    <div id="projectHolder">
+
+    </div>
+
 </body>
 </html>

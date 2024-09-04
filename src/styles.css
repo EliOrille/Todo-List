@@ -1,0 +1,15 @@
+#projectSubmitBlock{
+    display: none;
+}
+#projectHolder{
+    display: flex;
+}
+.projectBlock{
+    border-width: 10px;
+    border-color: black;
+    width: 100px;
+}
+
+#todoSubmitBlock{
+    display:none;
+}
